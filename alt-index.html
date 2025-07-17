@@ -1,0 +1,909 @@
+<html>
+<head>
+<title>Giveroo - Home</title>
+
+<!-- HEAD PHP FILE -->
+<meta name="description" content="Giveroo"><meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#FFE4C4">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#FFE4C4">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#FFE4C4">
+
+
+<meta name="dcterms.rightsHolder" content="Giveroo">
+<meta name="language" content="english">
+<meta name="keywords" content="">
+<meta name="HandheldFriendly" content="true"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" "="">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<link href="styles/main.css" rel="stylesheet">
+<script src="scripts/main.js"></script>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+    font-size: 100%;
+    list-style: none;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 100;
+    min-height: 100%;
+    -moz-transform: scale(1,1);
+    zoom: 1;
+    zoom: 100%;
+}
+body.menu-open {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+.noOverFlow {
+	overflow: hidden;
+}
+.alertMessage {
+    margin: 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding: 12px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.pgWrap {
+	width: 100%;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+    overflow: hidden;
+	position: relative;
+    background-color: #FFFFFF;
+    margin-top: 0px;
+}
+.mainHeroContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  z-index: 2;
+}
+
+.mainHeroWrap {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.mainHeroContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.mainHeroContentWrap {
+  color: #fff;
+  max-width: 800px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUpFadeIn 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes slideUpFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mainHeroTitle {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.mainHeroSubTitle {
+  font-size: 1.5em;
+}
+
+.videoToggleBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.videoToggleBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .mainHeroTitle {
+    font-size: 2em;
+  }
+
+  .mainHeroSubTitle {
+    font-size: 1.2em;
+  }
+
+  .videoToggleBtn {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+}
+nav.navBar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s ease;
+}
+nav.navBar:hover {
+background: #444;
+}
+.navBarWrap {
+  display: flex;
+  justify-content: space-between; /* Pushes left and right sections to edges */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left logo */
+.navBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navBarLeft a img {
+  height: 90px;
+  width: auto;
+}
+
+/* Right side (menu or hamburger) */
+.navBarRight {
+  display: flex;
+  align-items: center;
+}
+
+/* Non-mobile links */
+.navRightNonMobile {
+  display: flex;
+  gap: 30px;
+}
+
+.navRightNonMobile a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navRightNonMobile a:hover {
+  color: #FFE4C4;
+}
+
+.navRightMobile {
+  display: none;
+}
+.hamburger .hamburger-inner,
+.hamburger .hamburger-inner::before,
+.hamburger .hamburger-inner::after {
+  background-color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navRightNonMobile {
+    display: none;
+  }
+
+  .navRightMobile {
+    display: block;
+  }
+
+  .navBarLeft a img {
+    height: 80px;
+  }
+
+  .navBarWrap {
+    padding: 0 16px;
+  }
+}
+
+/* Reduce spacing slightly for medium screens */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .navRightNonMobile {
+    gap: 20px;
+  }
+}
+.navMenu {
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(68, 68, 68, 0.95);
+    z-index: 4;
+    display: none;
+    overflow-y: auto;
+}
+
+.navMenuWrap {
+  padding: 20px 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close button styling */
+.closeMenuBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+/* Link styling */
+.navMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navMenu li {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.navMenu li:nth-child(1) { animation-delay: 0.1s; }
+.navMenu li:nth-child(2) { animation-delay: 0.2s; }
+.navMenu li:nth-child(3) { animation-delay: 0.3s; }
+.navMenu li:nth-child(4) { animation-delay: 0.4s; }
+
+.navMenu a {
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: block;
+  padding: 16px 0;
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: #FFE4C4;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hide menu entirely on desktop */
+@media (min-width: 768px) {
+  .navMenu {
+    display: none !important;
+  }
+}
+.servicesContainer {
+  width: 100%;
+  background-color: #000000;
+  padding: 100px 20px; /* generous top/bottom spacing */
+}
+
+/* Inner centered content wrapper */
+.servicesWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFF;
+}
+
+/* Heading */
+.servicesWrap h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #FFF;
+}
+
+/* Paragraph */
+.servicesWrap p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  color: #FFF;
+}
+
+/* Button style */
+.servicesButton {
+  display: inline-block;
+  background-color: #FFE4C4;
+  color: #000;
+  padding: 16px 32px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Button hover animation */
+.servicesButton:hover {
+  background-color: #8c654a;
+  transform: translateY(-2px);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .servicesWrap h2 {
+    font-size: 2rem;
+  }
+
+  .servicesWrap p {
+    font-size: 1rem;
+  }
+
+  .servicesButton {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+}
+.whyUsContainer {
+  width: 100%;
+  background-color: #444;
+  padding: 100px 20px;
+}
+
+.whyUsWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.whyUsLeft {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+.whyUsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.whyUsRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.whyUsRight h3 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.whyUsRight p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #fff;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.whyUsButton {
+  display: inline-block;
+  background-color: #FFE4C4;
+  color: #000;
+  padding: 16px 32px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.whyUsButton:hover {
+  background-color: #8c654a;
+  transform: translateY(-2px);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .whyUsWrap {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .whyUsRight {
+    text-align: center;
+    align-items: center;
+  }
+
+  .whyUsRight h3 {
+    font-size: 1.8rem;
+  }
+
+  .whyUsRight p {
+    font-size: 1rem;
+  }
+
+  .whyUsButton {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+}
+
+/* === Animation States === */
+.animate-from-left,
+.animate-from-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-from-left {
+  transform: translateX(-50px);
+}
+
+.animate-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+.charityLogosSection {
+  width: 100%;
+  background-color: #000;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.charityLogosWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.charityLogosWrap h3 {
+  font-size: 2rem;
+  color: #FFF;
+  margin-bottom: 60px;
+}
+
+.charityLogoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* max 3 per row */
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.charityLogoGrid img {
+  max-height: 120px;
+  max-width: 100%;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.charityLogoGrid img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .charityLogoGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.homepageContactSection.contact-bg-image {
+  position: relative;
+  background: url('images/indexContact.jpg') center center / cover no-repeat;
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.homepageContactSection.contact-bg-image::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  z-index: -1;
+}
+
+.homepageContactWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; /* ensures text stays above overlay */
+  z-index: 2;
+}
+
+.homepageContactWrap h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.homepageContactWrap p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.homepageContactButton {
+  background-color: #FFE4C4;
+  color: #000;
+  padding: 16px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.homepageContactButton:hover {
+  background-color: #8c654a;
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
+
+/* Animation setup */
+.animate-contact-cta {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1); /* bounce ease */
+  will-change: opacity, transform;
+}
+
+.animate-contact-cta.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.siteFooter {
+  background-color: #444444;
+  color: #fff;
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+
+.footerWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footerLogo img {
+  height: 100px;
+  width: auto;
+}
+
+.footerNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.footerNav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footerNav a:hover {
+  color: #FFE4C4;
+}
+
+.footerBottom {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .footerWrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footerNav {
+    justify-content: flex-end;
+  }
+}
+</style>
+<script>
+var pageNFErr = 0;
+</script>
+<script>
+		function valid_email(email) {
+ var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+	}
+	$(document).ready(function(){
+		if(pageNFErr == 1) {
+			showError();
+			pageNFErr = 0;
+		}
+	const video = $('#heroVideo')[0];
+
+    $('#videoToggleBtn').on('click', function () {
+      if (video.paused) {
+        video.play();
+        $(this).text('⏸️');;
+      } else {
+        video.pause();
+        $(this).text('▶️');
+      }
+    });
+	$('.hamburger').on('click', function () {
+  $('.hamburger').toggleClass('is-active');
+  $('.navMenu').fadeToggle(300);
+  $('body').toggleClass('menu-open');
+});
+
+    $('.closeMenuBtn, .navMenu a').on('click', function () {
+      $('.navMenu').fadeOut(300);
+      $('.hamburger').removeClass('is-active');
+	  $('body').removeClass('menu-open');
+    });
+	
+	function isScrolledIntoView(el) {
+      const elementTop = $(el).offset().top;
+      const elementBottom = elementTop + $(el).outerHeight();
+      const viewportTop = $(window).scrollTop();
+      const viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop + 100 && elementTop < viewportBottom - 100;
+    }
+
+    function checkAnimations() {
+      $('.animate-from-left, .animate-from-right').each(function () {
+        if (isScrolledIntoView(this) && !$(this).hasClass('animate-visible')) {
+          $(this).addClass('animate-visible');
+        }
+      });
+    }
+
+    // Initial check
+    checkAnimations();
+
+    // Recheck on scroll
+    $(window).on('scroll resize', checkAnimations);
+	
+	function isInViewport(el) {
+      const elementTop = $(el).offset().top;
+      const elementBottom = elementTop + $(el).outerHeight();
+      const viewportTop = $(window).scrollTop();
+      const viewportBottom = viewportTop + $(window).height();
+      return elementBottom > viewportTop + 100 && elementTop < viewportBottom - 100;
+    }
+
+    function animateCTA() {
+      $('.animate-contact-cta').each(function () {
+        if (isInViewport(this) && !$(this).hasClass('visible')) {
+          $(this).addClass('visible');
+        }
+      });
+    }
+
+    animateCTA(); // initial check
+    $(window).on('scroll resize', animateCTA);
+});
+</script>
+</head>
+<body>
+<div class="pgWrap">
+<nav class="navBar">
+<div class="navBarWrap">
+<div class="navBarLeft">
+<a href="index.html">
+<img src="images/logo.png">
+</a>
+</div>
+<div class="navBarRight">
+<div class="navRightMobile">
+<button class="hamburger hamburger--emphatic" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+</div>
+<div class="navRightNonMobile">
+<span><a href="fundraisingServices.html">Fundraising Services</a></span>
+<span><a href="whyUs.html">Why Us</a></span>
+<span><a href="getInTouch.html">Get in Touch</a></span>
+</div>
+</div>
+</div>
+</nav>
+<div class="navMenu">
+<div class="navMenuWrap">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="fundraisingServices.html">Fundraising Services</a></li>
+<li><a href="whyUs.html">Why Us</a></li>
+<li><a href="getInTouch.html">Get in Touch</a></li>
+</ul>
+</div>
+</div>
+<div class="bodyWrap">
+<div class="mainHeroContainer">
+<video autoplay muted loop playsinline id="heroVideo" class="backgroundVideo">
+    <source src="indexHero.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+   <div class="videoOverlay"></div>
+<div class="mainHeroWrap">
+<div class="mainHeroContent">
+<div class="mainHeroContentWrap">
+<!-- END HEADER -->
+
+<div class="mainHeroTitle">We Are Giveroo</div>
+<div class="mainHeroSubTitle">Partner with us and join us in our revolution to redefine fundraising.</div>
+
+</div>
+</div>
+</div>
+<button id="videoToggleBtn" class="videoToggleBtn">⏸️</button>
+</div>
+<div class="mainPageContent">
+<div class="servicesContainer">
+<div class="servicesWrap">
+<h2>We are a Fundraising Powerhouse</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.</p>
+<a href="fundraisingServices.html" class="servicesButton">Learn more about our services</a>
+</div>
+</div>
+
+<div class="whyUsContainer">
+  <div class="whyUsWrap">
+    <div class="whyUsLeft animate-from-left">
+      <img class="whyUsImage" src="images/indexWhyUs.jpg" />
+    </div>
+    <div class="whyUsRight animate-from-right">
+      <h3>The Giveroo Difference</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.</p>
+      <a href="whyUs.html" class="whyUsButton">Learn More</a>
+    </div>
+  </div>
+</div>
+
+<div class="charityLogosSection">
+  <div class="charityLogosWrap">
+    <h3>Partners we've worked with</h3>
+    <div class="charityLogoGrid">
+      <img src="images/char1.png" alt="Charity 1 Logo" />
+      <img src="images/char2.png" alt="Charity 2 Logo" />
+      <img src="images/char3.png" alt="Charity 3 Logo" />
+      <img src="images/char4.png" alt="Charity 4 Logo" />
+      <img src="images/char5.png" alt="Charity 5 Logo" />
+      <img src="images/char6.png" alt="Charity 6 Logo" />
+	  <img src="images/char7.png" alt="Charity 7 Logo" />
+    </div>
+  </div>
+</div>
+
+<div class="homepageContactSection contact-bg-image animate-contact-cta">
+  <div class="homepageContactWrap">
+    <h2>Let’s Start a Conversation</h2>
+    <p>Ready to partner with Giveroo? Reach out to our leadership team, learn more, or contact us directly.</p>
+    <a href="getInTouch.html" class="homepageContactButton">Get in Touch</a>
+  </div>
+</div>
+</div>
+</div>
+<footer class="siteFooter">
+  <div class="footerWrap">
+    <div class="footerLogo">
+      <a href="index.html"><img src="images/logo.png" alt="Giveroo Logo" /></a>
+    </div>
+    <div class="footerNav">
+      <a href="index.html">Home</a>
+      <a href="fundraisingServices.html">Fundraising Services</a>
+      <a href="whyUs.html">Why Us</a>
+      <a href="getInTouch.html">Contact</a>
+    </div>
+  </div>
+  <div class="footerBottom">
+    <p>&copy; 2025 Giveroo. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>
