@@ -6,11 +6,11 @@
 <meta name="description" content="Giveroo"><meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#FFE4C4">
+<meta name="theme-color" content="#A67B5B">
 <!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#FFE4C4">
+<meta name="msapplication-navbutton-color" content="#A67B5B">
 <!-- iOS Safari -->
-<meta name="apple-mobile-web-app-status-bar-style" content="#FFE4C4">
+<meta name="apple-mobile-web-app-status-bar-style" content="#A67B5B">
 
 
 <meta name="dcterms.rightsHolder" content="Giveroo">
@@ -152,12 +152,10 @@ body.menu-open {
   font-size: 3em;
   font-weight: bold;
   margin-bottom: 0.5em;
-  color: #FFE4C4;
 }
 
 .mainHeroSubTitle {
   font-size: 1.5em;
-  font-weight: 400;
 }
 
 .videoToggleBtn {
@@ -223,7 +221,7 @@ background: #444;
 }
 
 .navBarLeft a img {
-  height: 140px;
+  height: 90px;
   width: auto;
 }
 
@@ -248,7 +246,7 @@ background: #444;
 }
 
 .navRightNonMobile a:hover {
-  color: #FFE4C4;
+  color: #A67B5B;
 }
 
 .navRightMobile {
@@ -344,7 +342,7 @@ background: #444;
 }
 
 .navMenu a:hover {
-  color: #FFE4C4;
+  color: #A67B5B;
 }
 
 @keyframes slideInLeft {
@@ -362,7 +360,7 @@ background: #444;
 }
 .servicesContainer {
   width: 100%;
-  background-color: #222222;
+  background-color: #FFFFFF;
   padding: 100px 20px; /* generous top/bottom spacing */
 }
 
@@ -371,7 +369,7 @@ background: #444;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  color: #FFF;
+  color: #333;
 }
 
 /* Heading */
@@ -379,7 +377,7 @@ background: #444;
   font-size: 2.8rem;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #FFE4C4;
+  color: #000;
 }
 
 /* Paragraph */
@@ -388,21 +386,20 @@ background: #444;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto 50px auto;
-  color: #FFF;
+  color: #555;
 }
 
 /* Button style */
 .servicesButton {
   display: inline-block;
-  background-color: #FFE4C4;
-  color: #222;
+  background-color: #A67B5B;
+  color: white;
   padding: 16px 32px;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  font-weight: 600;
 }
 
 /* Button hover animation */
@@ -431,7 +428,7 @@ background: #444;
 }
 .whyUsContainer {
   width: 100%;
-  background-color: #252525;
+  background-color: #f9f9f9;
   padding: 100px 20px;
 }
 
@@ -469,21 +466,21 @@ background: #444;
 .whyUsRight h3 {
   font-size: 2.2rem;
   margin-bottom: 25px;
-  color: #FFE4C4;
+  color: #000;
 }
 
 .whyUsRight p {
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #fff;
+  color: #555;
   margin-bottom: 40px;
   max-width: 600px;
 }
 
 .whyUsButton {
   display: inline-block;
-  background-color: #FFE4C4;
-  color: #222;
+  background-color: #A67B5B;
+  color: white;
   padding: 16px 32px;
   font-size: 1rem;
   text-decoration: none;
@@ -491,7 +488,6 @@ background: #444;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  font-weight: 600;
 }
 
 .whyUsButton:hover {
@@ -543,6 +539,51 @@ background: #444;
   opacity: 1 !important;
   transform: translateX(0) !important;
 }
+.charityLogosSection {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.charityLogosWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.charityLogosWrap h3 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.charityLogoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* max 3 per row */
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.charityLogoGrid img {
+  max-height: 120px;
+  max-width: 100%;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.charityLogoGrid img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .charityLogoGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
 .homepageContactSection.contact-bg-image {
   position: relative;
   background: url('images/indexContact.jpg') center center / cover no-repeat;
@@ -572,7 +613,6 @@ background: #444;
 .homepageContactWrap h2 {
   font-size: 2.4rem;
   margin-bottom: 20px;
-  color: #FFE4C4;
 }
 
 .homepageContactWrap p {
@@ -581,14 +621,13 @@ background: #444;
 }
 
 .homepageContactButton {
-  background-color: #FFE4C4;
-  color: #222;
+  background-color: #A67B5B;
+  color: #fff;
   padding: 16px 32px;
   border-radius: 4px;
   text-decoration: none;
   font-size: 1rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-weight: 600;
 }
 
 .homepageContactButton:hover {
@@ -610,86 +649,6 @@ background: #444;
   opacity: 1;
   transform: translateY(0);
 }
-
-.foundersSection {
-  width: 100%;
-  background-color: #222222;
-  padding: 100px 20px;
-}
-
-.foundersWrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.foundersWrap h2 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 60px;
-  color: #FFE4C4;
-}
-
-.founderGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-}
-
-.founderCard {
-  background-color: #faeedf;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-  padding: 30px 20px;
-  width: 100%;
-  max-width: 300px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.founderCard:hover {
-  transform: translateY(-5px);
-}
-
-.founderCard img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 100%;
-  margin-bottom: 20px;
-}
-
-.founderCard h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.founderCard p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-  font-weight: 300;
-}
-
-/* Mobile Optimized */
-@media (max-width: 768px) {
-  .founderGrid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .founderCard {
-    max-width: 90%;
-  }
-
-  .foundersWrap h2 {
-    font-size: 2rem;
-  }
-}
-
 .siteFooter {
   background-color: #444444;
   color: #fff;
@@ -707,7 +666,7 @@ background: #444;
 }
 
 .footerLogo img {
-  height: 150px;
+  height: 100px;
   width: auto;
 }
 
@@ -726,7 +685,7 @@ background: #444;
 }
 
 .footerNav a:hover {
-  color: #FFE4C4;
+  color: #A67B5B;
 }
 
 .footerBottom {
@@ -905,33 +864,20 @@ var pageNFErr = 0;
   </div>
 </div>
 
-<section class="foundersSection">
-  <div class="foundersWrap">
-    <h2>Meet Our Founders</h2>
-    <div class="founderGrid">
-      <div class="founderCard animate-from-left" style="transition-delay: 0.1s;">
-        <img src="images/founder1.jpg">
-        <h3>Jesse Hohnstein</h3>
-        <p>Co-Founder, Giveroo<br>
-          Jesse brings over 8 years of face-to-face fundraising experience, known for his sharp talent instincts and team-first mindset. He’s driven by helping people grow — especially the underdogs — and believes the right environment can turn struggle into success. For him, fundraising is family.
-		  </p>
-      </div>
-      <div class="founderCard animate-from-left" style="transition-delay: 0.3s;">
-        <img src="images/founder2.jpg">
-        <h3>Jordan Nur</h3>
-        <p>Co-Founder, Giveroo<br>
-          Jordan is in fundraising for the people — both the causes and the teammates behind the mission. He’s committed to building supportive, resilient teams that grow through challenges and stay rooted in purpose. He helps fundraisers turn rejection into strength and lead with vision.
-		  </p>
-      </div>
-      <div class="founderCard animate-from-left" style="transition-delay: 0.5s;">
-        <img src="images/founder3.jpg">
-        <h3>Nicolas Gilbert</h3>
-        <p>Co-Founder, Giveroo<br>
-          Nicolas has been in fundraising since 2019, representing 20+ charities and leading teams across Canada. He’s passionate about developing new leaders and building high-performing, purpose-driven teams. His mission is simple: make a meaningful impact — for donors, nonprofits, and the next generation of fundraisers.</p>
-      </div>
+<div class="charityLogosSection">
+  <div class="charityLogosWrap">
+    <h3>Partners we've worked with</h3>
+    <div class="charityLogoGrid">
+      <img src="images/char1.png" alt="Charity 1 Logo" />
+      <img src="images/char2.png" alt="Charity 2 Logo" />
+      <img src="images/char3.png" alt="Charity 3 Logo" />
+      <img src="images/char4.png" alt="Charity 4 Logo" />
+      <img src="images/char5.png" alt="Charity 5 Logo" />
+      <img src="images/char6.png" alt="Charity 6 Logo" />
+	  <img src="images/char7.png" alt="Charity 7 Logo" />
     </div>
   </div>
-</section>
+</div>
 
 <div class="homepageContactSection contact-bg-image animate-contact-cta">
   <div class="homepageContactWrap">
