@@ -1,0 +1,676 @@
+<html>
+<head>
+<title>Giveroo - Why Us</title>
+
+<!-- HEAD PHP FILE -->
+<meta name="description" content="Giveroo"><meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#FFE4C4">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#FFE4C4">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#FFE4C4">
+
+
+<meta name="dcterms.rightsHolder" content="Giveroo">
+<meta name="language" content="english">
+<meta name="keywords" content="">
+<meta name="HandheldFriendly" content="true"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" "="">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<link href="styles/main.css" rel="stylesheet">
+<script src="scripts/main.js"></script>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+    font-size: 100%;
+    list-style: none;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 100;
+    min-height: 100%;
+    -moz-transform: scale(1,1);
+    zoom: 1;
+    zoom: 100%;
+}
+body.menu-open {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+.noOverFlow {
+	overflow: hidden;
+}
+.alertMessage {
+    margin: 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding: 12px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.pgWrap {
+	width: 100%;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+    overflow: hidden;
+	position: relative;
+    background-color: #FFFFFF;
+    margin-top: 0px;
+}
+
+@keyframes slideUpFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+nav.navBar {
+  width: 100%;
+  height: 100px;
+  z-index: 5;
+  background: #444;
+  transition: 0.3s ease;
+}
+.navBarWrap {
+  display: flex;
+  justify-content: space-between; /* Pushes left and right sections to edges */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left logo */
+.navBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navBarLeft a img {
+  height: 140px;
+  width: auto;
+}
+
+/* Right side (menu or hamburger) */
+.navBarRight {
+  display: flex;
+  align-items: center;
+}
+
+/* Non-mobile links */
+.navRightNonMobile {
+  display: flex;
+  gap: 30px;
+}
+
+.navRightNonMobile a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navRightNonMobile a:hover {
+  color: #FFE4C4;
+}
+
+.navRightMobile {
+  display: none;
+}
+.hamburger .hamburger-inner,
+.hamburger .hamburger-inner::before,
+.hamburger .hamburger-inner::after {
+  background-color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navRightNonMobile {
+    display: none;
+  }
+
+  .navRightMobile {
+    display: block;
+  }
+
+  .navBarLeft a img {
+    height: 80px;
+  }
+
+  .navBarWrap {
+    padding: 0 16px;
+  }
+}
+
+/* Reduce spacing slightly for medium screens */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .navRightNonMobile {
+    gap: 20px;
+  }
+}
+.navMenu {
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(68, 68, 68, 0.95);
+    z-index: 4;
+    display: none;
+    overflow-y: auto;
+}
+
+.navMenuWrap {
+  padding: 20px 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close button styling */
+.closeMenuBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+/* Link styling */
+.navMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navMenu li {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.navMenu li:nth-child(1) { animation-delay: 0.1s; }
+.navMenu li:nth-child(2) { animation-delay: 0.2s; }
+.navMenu li:nth-child(3) { animation-delay: 0.3s; }
+.navMenu li:nth-child(4) { animation-delay: 0.4s; }
+
+.navMenu a {
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: block;
+  padding: 16px 0;
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: #FFE4C4;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hide menu entirely on desktop */
+@media (min-width: 768px) {
+  .navMenu {
+    display: none !important;
+  }
+}
+   /* --- ANIMATIONS --- */
+    .animate-from-bottom {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .animate-visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+.whyHero {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/whyusHero.jpg');
+  background-size: cover;
+  background-position: 50% 80%;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  padding: 160px 20px 100px;
+  font-weight: 400;
+}
+.whyHeroContent > h1 {
+color: #FFE4C4;
+}
+
+.missionStatement,
+.foundersSection {
+  background-color: #222222;
+  color: #FFF;
+  padding: 100px 20px;
+  font-weight: 400;
+}
+
+.pillarsSection,
+.ctaSection {
+background-color: #252525;
+color: #FFF;
+  padding: 100px 20px;
+}
+.foundersSection {
+padding-bottom: 70px;
+}
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #FFE4C4;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.pillarsGrid,
+.foundersGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.pillar {
+  flex: 1 1 250px;
+  background-color: #faeedf;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #555;
+  font-weight: 400;
+}
+
+.pillar h3 {
+	color: #222222;
+}
+
+.founderRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 50px;
+  background-color: #faeedf;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.founderRow img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.founderText {
+  flex: 1;
+  color: #555;
+  font-weight: 400;
+}
+
+.founderText h3 {
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .founderRow {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .founderRow img {
+    margin-bottom: 20px;
+  }
+
+  .founderText {
+    text-align: left;
+  }
+}
+.ctaSection {
+    text-align: center;
+	font-weight: 400;
+}
+.ctaSection {
+  position: relative;
+  background: url('images/whyUsContact.jpg') center center / cover no-repeat;
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.ctaSection::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  z-index: -1;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #FFE4C4;
+  color: #222;
+  padding: 14px 28px;
+  margin-top: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.ctaButton:hover {
+  background-color: #8c654a;
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
+
+/* Simple fade-up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+.delay-4 { transition-delay: 0.8s; }
+
+.siteFooter {
+  background-color: #444444;
+  color: #fff;
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+
+.footerWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footerLogo img {
+  height: 150px;
+  width: auto;
+}
+
+.footerNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.footerNav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footerNav a:hover {
+  color: #FFE4C4;
+}
+
+.footerBottom {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .footerWrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footerNav {
+    justify-content: flex-end;
+  }
+}
+</style>
+<script>
+var pageNFErr = 0;
+</script>
+<script>
+		function valid_email(email) {
+ var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+	}
+
+	$(document).ready(function(){
+		if(pageNFErr == 1) {
+			showError();
+			pageNFErr = 0;
+		}
+		$('.hamburger').on('click', function () {
+  $('.hamburger').toggleClass('is-active');
+  $('.navMenu').fadeToggle(300);
+  $('body').toggleClass('menu-open');
+});
+
+    $('.closeMenuBtn, .navMenu a').on('click', function () {
+      $('.navMenu').fadeOut(300);
+      $('.hamburger').removeClass('is-active');
+	  $('body').removeClass('menu-open');
+    });
+	
+	function revealOnScroll() {
+      $('.fade-up').each(function () {
+        var elementTop = $(this).offset().top;
+        var windowBottom = $(window).scrollTop() + $(window).height();
+
+        if (elementTop < windowBottom - 100) {
+          $(this).addClass('active');
+        }
+      });
+    }
+
+    revealOnScroll(); // Run on load
+    $(window).on('scroll', revealOnScroll); // Run on scroll
+});
+</script>
+</head>
+<body>
+<div class="pgWrap">
+<nav class="navBar">
+<div class="navBarWrap">
+<div class="navBarLeft">
+<a href="index.html">
+<img src="images/logo.png">
+</a>
+</div>
+<div class="navBarRight">
+<div class="navRightMobile">
+<button class="hamburger hamburger--emphatic" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+</div>
+<div class="navRightNonMobile">
+<span><a href="fundraisingServices.html">Fundraising Services</a></span>
+<span><a href="whyUs.html">Why Us</a></span>
+<span><a href="getInTouch.html">Get in Touch</a></span>
+</div>
+</div>
+</div>
+</nav>
+<div class="navMenu">
+<div class="navMenuWrap">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="fundraisingServices.html">Fundraising Services</a></li>
+<li><a href="whyUs.html">Why Us</a></li>
+<li><a href="getInTouch.html">Get in Touch</a></li>
+</ul>
+</div>
+</div>
+<div class="bodyWrap">
+
+<section class="whyHero">
+  <div class="whyHeroContent">
+    <h1 class="fade-up">We Fundraise Differently</h1>
+    <p class="fade-up delay-1">We build trust, drive results, and create lasting impact — one donor at a time.</p>
+  </div>
+</section>
+
+<!-- ===== MISSION STATEMENT ===== -->
+<section class="missionStatement">
+  <div class="sectionContainer">
+    <h2 class="fade-up">Our Mission</h2>
+    <p class="fade-up delay-1">
+      Giveroo is built from the heart, driven by a passion for growing strong teams that bring in long-lasting donors. We believe the real impact of fundraising begins after the first year, and we’re focused on building meaningful relationships and long-term giving that truly makes a difference.
+    </p>
+  </div>
+</section>
+
+<!-- ===== WHAT MAKES US DIFFERENT ===== -->
+<section class="pillarsSection">
+  <div class="sectionContainer">
+    <h2 class="fade-up">What Makes Us Different</h2>
+    <div class="pillarsGrid">
+      <div class="pillar fade-up delay-1">
+        <h3>People-First Culture</h3>
+        <p>We invest in our fundraisers like no one else — through training, mentorship, and meaningful support.</p>
+      </div>
+      <div class="pillar fade-up delay-2">
+        <h3>Long-Term Results</h3>
+        <p>We don’t chase quick wins. We focus on building high-retention donor relationships that last.</p>
+      </div>
+      <div class="pillar fade-up delay-3">
+        <h3>Brand-Safe Partnerships</h3>
+        <p>Your reputation is our priority. We uphold the highest standards in every interaction.</p>
+      </div>
+      <div class="pillar fade-up delay-4">
+        <h3>Nationwide Experience</h3>
+        <p>From BC to Ontario, we’ve built and led high-performing fundraising teams across the country.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOUNDERS VISION SECTION ===== -->
+<section class="foundersSection">
+  <div class="sectionContainer">
+    <h2 class="fade-up">Meet the Founders</h2>
+      <!-- Founder 1 -->
+	  <div class="founderRow fade-up delay-1">
+      <img src="images/founder1.jpg" alt="Jesse Hohnstein">
+      <div class="founderText">
+        <h3>Jesse Hohnstein – Co-Founder, Giveroo</h3>
+        <p>Jesse has been in the face-to-face fundraising world for over 8 years, starting at Global Faces Direct where he met his two best friends — and now business partners — Nic and Jordan. He’s known for his hands-on leadership, sharp eye for talent, and passion for people.</p>
+        <p>He’s a savage at promoting others and loves helping underdogs rise — taking people who are struggling and showing them how to turn things around by making the business a lifestyle. For Jesse, it’s more than just fundraising — it’s about connection, growth, and building a family. He’s proud to be creating a place where people can succeed — and feel at home.</p>
+      </div>
+    </div>
+	
+	<div class="founderRow fade-up delay-2">
+      <img src="images/founder2.jpg" alt="Jordan Nur">
+      <div class="founderText">
+        <h3>Jordan Nur – Co-Founder, Giveroo</h3>
+        <p>I’m in fundraising for the people — not just the ones our partner charities support, but the people doing the work on the ground every day. I’m passionate about building teams that uplift each other, keeping fundraisers focused on the bigger picture, and helping them grow through the hard days. There’s nothing better than watching someone turn rejection into resilience and reconnect with why they do this work.</p>
+      </div>
+    </div>
+	
+    <div class="founderRow fade-up delay-3">
+      <img src="images/founder3.jpg" alt="Nicolas Gilbert">
+      <div class="founderText">
+        <h3>Nicolas Gilbert – Co-Founder, Giveroo</h3>
+        <p>Nicolas has been immersed in the fundraising world since 2019. What started as a job for him quickly became a passion — one that’s allowed him to represent over twenty incredible charities and help secure thousands of long-term monthly donors for causes that truly matter to him and the generous donors he’s had the privilege of interacting with.</p>
+        <p>Throughout the years, he’s had the privilege of training thousands of new fundraisers and leading successful face-to-face fundraising teams across British Columbia, Alberta, and Ontario. He believes in the power of purpose-driven work — not just for the impact it has on the world, but for the way it transforms the people doing it.</p>
+        <p>What fuels Nicolas every day is the opportunity to build strong teams, develop new leaders, and mentor individuals who are just beginning their journey in the fundraising industry. Watching someone grow their confidence, master their craft, and eventually lead their own team is one of the most rewarding parts of what he loves doing.</p>
+        <p>At the heart of it all, Nicolas is driven by a simple goal: to make a meaningful difference — for the charities he and his teams serve, the donors they connect with, and the fundraisers he inspires along the way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+</section>
+
+<!-- ===== CALL TO ACTION ===== -->
+<section class="ctaSection">
+  <div class="sectionContainer fade-up">
+    <h2>Ready to Create Something Meaningful?</h2>
+    <p>Let’s partner to build impact-driven campaigns that make a difference. We’d love to connect.</p>
+    <a href="contact.html" class="ctaButton">Start a Conversation</a>
+  </div>
+</section>
+
+</div>
+<footer class="siteFooter">
+  <div class="footerWrap">
+    <div class="footerLogo">
+      <a href="index.html"><img src="images/logo.png" alt="Giveroo Logo" /></a>
+    </div>
+    <div class="footerNav">
+      <a href="index.html">Home</a>
+      <a href="fundraisingServices.html">Fundraising Services</a>
+      <a href="whyUs.html">Why Us</a>
+      <a href="getInTouch.html">Contact</a>
+    </div>
+  </div>
+  <div class="footerBottom">
+    <p>&copy; 2025 Giveroo. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>
