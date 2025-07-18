@@ -492,6 +492,73 @@ var pageNFErr = 0;
 
     // Recheck on scroll
     $(window).on('scroll resize', checkAnimations);
+	$('.submitMessageButton').click(function(){
+		var nameVal = $('.inputName').val();
+		var emailVal = $('.inputEmail').val();
+		var subjectVal = $('.inputSubject').val();
+		var bodyVal = $('.inputMessage').val();
+		if(($.trim(nameVal).length) > 1) {
+			if(($.trim(emailVal).length) > 3) {
+				if(valid_email(emailVal)) {
+					if(($.trim(subjectVal).length) > 2) {
+						if(($.trim(bodyVal).length) > 4) {
+							$.ajax({
+								type: "POST",
+								url: "sendEmail.php",
+								data: { "ename" : nameVal, "eemail" : emailVal, "esubj" : subjectVal, "emsg" : bodyVal },
+								success: function(result) {
+									if(result == 'gd') {
+										$('body').prepend('<div class="alertMessage alert alert-success fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Thanks! We\'ll reply to you soon.</div>');
+										$('.alertMessage').delay(5000).fadeOut();
+										$('.inputName').val('');
+										$('.inputEmail').val('');
+										$('.inputSubject').val('');
+										$('.inputMessage').val('');
+									} else if(result == 'bml') {
+										$('body').prepend('<div class="alertMessage alert alert-danger fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Sorry, we encountered an error. Please try again.</div>');
+										$('.alertMessage').delay(3000).fadeOut();
+									} else if(result == 'bms') {
+										$('body').prepend('<div class="alertMessage alert alert-warning fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please enter a message!</div>');
+										$('.alertMessage').delay(3000).fadeOut();
+									} else if(result == 'bsj') {
+										$('body').prepend('<div class="alertMessage alert alert-warning fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please enter a subject!</div>');
+										$('.alertMessage').delay(3000).fadeOut();
+									} else if(result == 'bem') {
+										$('body').prepend('<div class="alertMessage alert alert-warning fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please enter a valid email address!</div>');
+										$('.alertMessage').delay(3000).fadeOut();
+									} else if(result == 'bnm') {
+										$('body').prepend('<div class="alertMessage alert alert-warning fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please enter your name!</div>');
+										$('.alertMessage').delay(3000).fadeOut();
+									} else {
+										$('body').prepend('<div class="alertMessage alert alert-danger fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Sorry, we encountered an error. Please try again.</div>');
+										$('.alertMessage').delay(3000).fadeOut();
+									}
+								}, error: function() {
+									$('body').prepend('<div class="alertMessage alert alert-danger fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Sorry, we encountered an error. Please try again.2</div>');
+									$('.alertMessage').delay(3000).fadeOut();
+								}	
+							});
+						} else {
+							$('body').prepend('<div class="alertMessage alert alert-warning fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please enter a message!</div>');
+							$('.alertMessage').delay(3000).fadeOut();
+						}
+					} else {
+						$('body').prepend('<div class="alertMessage alert alert-warning fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please enter a subject!</div>');
+						$('.alertMessage').delay(3000).fadeOut();
+					}
+				} else {
+					$('body').prepend('<div class="alertMessage alert alert-warning fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please enter a valid email address!</div>');
+					$('.alertMessage').delay(3000).fadeOut();
+				}
+			} else {
+				$('body').prepend('<div class="alertMessage alert alert-warning fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please enter your email address!</div>');
+				$('.alertMessage').delay(3000).fadeOut();
+			}
+		} else {
+			$('body').prepend('<div class="alertMessage alert alert-warning fade in show"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please enter your name!</div>');
+			$('.alertMessage').delay(3000).fadeOut();
+		}
+	});
 });
 </script>
 </head>
@@ -559,11 +626,11 @@ var pageNFErr = 0;
       <div class="contactForm animate-from-bottom" style="transition-delay: 0.3s;">
         <h3>Send Us a Message</h3>
         <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-		  <input type="text" placeholder="Subject" required>
-          <textarea placeholder="Your Message" required></textarea>
-          <button>Submit</button>
+          <input type="text" name="inputName" class="inputName" placeholder="Your Name" maxlength="70" required>
+          <input type="email" name="inputEmail" class="inputEmail" placeholder="Your Email" maxlength="120" required>
+		  <input type="text" name="inputSubject" class="inputSubject" placeholder="Subject" maxlength="150" required>
+          <textarea name="inputMessage" class="inputMessage" placeholder="Your Message" maxlength="2500" required></textarea>
+          <button class="submitMessageButton">Submit</button>
         </form>
       </div>
     </div>
