@@ -318,7 +318,7 @@ nav.navBar {
   text-decoration: none;
 }
 
-.contactForm form {
+.contactForm div {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -625,13 +625,13 @@ var pageNFErr = 0;
       <!-- RIGHT: CONTACT FORM -->
       <div class="contactForm animate-from-bottom" style="transition-delay: 0.3s;">
         <h3>Send Us a Message</h3>
-        <form>
+        <div>
           <input type="text" name="inputName" class="inputName" placeholder="Your Name" maxlength="70" required>
           <input type="email" name="inputEmail" class="inputEmail" placeholder="Your Email" maxlength="120" required>
 		  <input type="text" name="inputSubject" class="inputSubject" placeholder="Subject" maxlength="150" required>
           <textarea name="inputMessage" class="inputMessage" placeholder="Your Message" maxlength="2500" required></textarea>
           <button class="submitMessageButton">Submit</button>
-        </form>
+        </div>
       </div>
     </div>
   </section>
