@@ -2,8 +2,7 @@
 <head>
 <title>Giveroo - Home</title>
 
-<!-- HEAD PHP FILE -->
-<meta name="description" content="Giveroo"><meta charset="UTF-8">
+<meta name="description" content="Giveroo - built from the heart, driven by a passion for growing strong fundraising teams that bring in long-lasting donors"><meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <!-- Chrome, Firefox OS and Opera -->
 <meta name="theme-color" content="#FFE4C4">
@@ -35,55 +34,53 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<link href="styles/main.css" rel="stylesheet">
-<script src="scripts/main.js"></script>
-
 <style>
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-	height: 100%;
-    font-size: 100%;
-    list-style: none;
-    font-family: 'Raleway', sans-serif !important;
-    font-weight: 100;
-    min-height: 100%;
-    -moz-transform: scale(1,1);
-    zoom: 1;
-    zoom: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  list-style: none;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 100;
+  min-height: 100%;
+  -moz-transform: scale(1,1);
+  zoom: 1;
+  zoom: 100%;
 }
+
 body.menu-open {
   overflow: hidden;
   height: 100vh;
   position: fixed;
   width: 100%;
 }
+
 .noOverFlow {
-	overflow: hidden;
+  overflow: hidden;
 }
+
 .alertMessage {
-    margin: 0;
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    padding: 12px;
-	font-size: 14px;
-	font-weight: 400;
+  margin: 0;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 400;
 }
+
 .pgWrap {
-	width: 100%;
-    min-height: 100%;
-    text-rendering: optimizeLegibility;
-    overflow: hidden;
-	position: relative;
-    background-color: #FFFFFF;
-    margin-top: 0px;
+  width: 100%;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFFFFF;
+  margin-top: 0px;
 }
+
 .mainHeroContainer {
   position: relative;
   width: 100%;
@@ -141,13 +138,6 @@ body.menu-open {
   animation-delay: 0.5s;
 }
 
-@keyframes slideUpFadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .mainHeroTitle {
   font-size: 3em;
   font-weight: bold;
@@ -179,21 +169,6 @@ body.menu-open {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .mainHeroTitle {
-    font-size: 2em;
-  }
-
-  .mainHeroSubTitle {
-    font-size: 1.2em;
-  }
-
-  .videoToggleBtn {
-    font-size: 0.9em;
-    padding: 8px 12px;
-  }
-}
 nav.navBar {
   position: absolute;
   top: 0;
@@ -203,12 +178,14 @@ nav.navBar {
   background: rgba(0, 0, 0, 0);
   transition: 0.3s ease;
 }
+
 nav.navBar:hover {
-background: #444;
+  background: #444;
 }
+
 .navBarWrap {
   display: flex;
-  justify-content: space-between; /* Pushes left and right sections to edges */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -216,7 +193,6 @@ background: #444;
   margin: 0 auto;
 }
 
-/* Left logo */
 .navBarLeft {
   display: flex;
   align-items: center;
@@ -227,13 +203,11 @@ background: #444;
   width: auto;
 }
 
-/* Right side (menu or hamburger) */
 .navBarRight {
   display: flex;
   align-items: center;
 }
 
-/* Non-mobile links */
 .navRightNonMobile {
   display: flex;
   gap: 30px;
@@ -254,47 +228,23 @@ background: #444;
 .navRightMobile {
   display: none;
 }
+
 .hamburger .hamburger-inner,
 .hamburger .hamburger-inner::before,
 .hamburger .hamburger-inner::after {
   background-color: white;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .navRightNonMobile {
-    display: none;
-  }
-
-  .navRightMobile {
-    display: block;
-  }
-
-  .navBarLeft a img {
-    height: 100px;
-  }
-
-  .navBarWrap {
-    padding: 0 16px;
-  }
-}
-
-/* Reduce spacing slightly for medium screens */
-@media (min-width: 901px) and (max-width: 1100px) {
-  .navRightNonMobile {
-    gap: 20px;
-  }
-}
 .navMenu {
-    position: fixed;
-    padding-top: 100px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(68, 68, 68, 0.95);
-    z-index: 4;
-    display: none;
-    overflow-y: auto;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(68, 68, 68, 0.95);
+  z-index: 4;
+  display: none;
+  overflow-y: auto;
 }
 
 .navMenuWrap {
@@ -304,7 +254,6 @@ background: #444;
   flex-direction: column;
 }
 
-/* Close button styling */
 .closeMenuBtn {
   background: none;
   border: none;
@@ -316,7 +265,6 @@ background: #444;
   margin-bottom: 30px;
 }
 
-/* Link styling */
 .navMenu ul {
   list-style: none;
   padding: 0;
@@ -347,26 +295,12 @@ background: #444;
   color: #FFE4C4;
 }
 
-@keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Hide menu entirely on desktop */
-@media (min-width: 768px) {
-  .navMenu {
-    display: none !important;
-  }
-}
 .servicesContainer {
   width: 100%;
   background-color: #222222;
-  padding: 100px 20px; /* generous top/bottom spacing */
+  padding: 100px 20px;
 }
 
-/* Inner centered content wrapper */
 .servicesWrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -374,7 +308,6 @@ background: #444;
   color: #FFF;
 }
 
-/* Heading */
 .servicesWrap h2 {
   font-size: 2.8rem;
   font-weight: 600;
@@ -382,7 +315,6 @@ background: #444;
   color: #FFE4C4;
 }
 
-/* Paragraph */
 .servicesWrap p {
   font-size: 1.15rem;
   line-height: 1.8;
@@ -392,7 +324,6 @@ background: #444;
   font-weight: 400;
 }
 
-/* Button style */
 .servicesButton {
   display: inline-block;
   background-color: #FFE4C4;
@@ -406,7 +337,6 @@ background: #444;
   font-weight: 600;
 }
 
-/* Button hover animation */
 .servicesButton:hover {
   background-color: #8c654a;
   transform: translateY(-2px);
@@ -414,22 +344,6 @@ background: #444;
   text-decoration: none;
 }
 
-
-/* Responsive typography */
-@media (max-width: 768px) {
-  .servicesWrap h2 {
-    font-size: 2rem;
-  }
-
-  .servicesWrap p {
-    font-size: 1rem;
-  }
-
-  .servicesButton {
-    padding: 14px 28px;
-    font-size: 0.95rem;
-  }
-}
 .whyUsContainer {
   width: 100%;
   background-color: #252525;
@@ -503,33 +417,6 @@ background: #444;
   text-decoration: none;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .whyUsWrap {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .whyUsRight {
-    text-align: center;
-    align-items: center;
-  }
-
-  .whyUsRight h3 {
-    font-size: 1.8rem;
-  }
-
-  .whyUsRight p {
-    font-size: 1rem;
-  }
-
-  .whyUsButton {
-    padding: 14px 28px;
-    font-size: 0.95rem;
-  }
-}
-
-/* === Animation States === */
 .animate-from-left,
 .animate-from-right {
   opacity: 0;
@@ -545,6 +432,7 @@ background: #444;
   opacity: 1 !important;
   transform: translateX(0) !important;
 }
+
 .homepageContactSection.contact-bg-image {
   position: relative;
   background: url('images/indexContact.jpg') 50% 20% / cover no-repeat;
@@ -558,7 +446,8 @@ background: #444;
 .homepageContactSection.contact-bg-image::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
@@ -568,7 +457,7 @@ background: #444;
 .homepageContactWrap {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative; /* ensures text stays above overlay */
+  position: relative;
   z-index: 2;
 }
 
@@ -601,11 +490,10 @@ background: #444;
   text-decoration: none;
 }
 
-/* Animation setup */
 .animate-contact-cta {
   opacity: 0;
   transform: translateY(50px);
-  transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1); /* bounce ease */
+  transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
   will-change: opacity, transform;
 }
 
@@ -677,22 +565,6 @@ background: #444;
   font-weight: 400;
 }
 
-/* Mobile Optimized */
-@media (max-width: 768px) {
-  .founderGrid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .founderCard {
-    max-width: 90%;
-  }
-
-  .foundersWrap h2 {
-    font-size: 2rem;
-  }
-}
-
 .siteFooter {
   background-color: #444444;
   color: #fff;
@@ -739,8 +611,111 @@ background: #444;
   color: #ccc;
 }
 
-/* Responsive */
+@keyframes slideUpFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeroTitle {
+    font-size: 2em;
+  }
+
+  .mainHeroSubTitle {
+    font-size: 1.2em;
+  }
+
+  .videoToggleBtn {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  .navRightNonMobile {
+    display: none;
+  }
+
+  .navRightMobile {
+    display: block;
+  }
+
+  .navBarLeft a img {
+    height: 100px;
+  }
+
+  .navBarWrap {
+    padding: 0 16px;
+  }
+
+  .servicesWrap h2 {
+    font-size: 2rem;
+  }
+
+  .servicesWrap p {
+    font-size: 1rem;
+  }
+
+  .servicesButton {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+
+  .whyUsWrap {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .whyUsRight {
+    text-align: center;
+    align-items: center;
+  }
+
+  .whyUsRight h3 {
+    font-size: 1.8rem;
+  }
+
+  .whyUsRight p {
+    font-size: 1rem;
+  }
+
+  .whyUsButton {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+
+  .founderGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founderCard {
+    max-width: 90%;
+  }
+
+  .foundersWrap h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .navRightNonMobile {
+    gap: 20px;
+  }
+}
+
 @media (min-width: 768px) {
+  .navMenu {
+    display: none !important;
+  }
+
   .footerWrap {
     flex-direction: row;
     justify-content: space-between;
@@ -805,10 +780,7 @@ var pageNFErr = 0;
       });
     }
 
-    // Initial check
     checkAnimations();
-
-    // Recheck on scroll
     $(window).on('scroll resize', checkAnimations);
 	
 	function isInViewport(el) {
@@ -827,7 +799,7 @@ var pageNFErr = 0;
       });
     }
 
-    animateCTA(); // initial check
+    animateCTA();
     $(window).on('scroll resize', animateCTA);
 });
 </script>
@@ -877,7 +849,6 @@ var pageNFErr = 0;
 <div class="mainHeroWrap">
 <div class="mainHeroContent">
 <div class="mainHeroContentWrap">
-<!-- END HEADER -->
 
 <div class="mainHeroTitle">We Are Giveroo</div>
 <div class="mainHeroSubTitle">Partner with us and join us in our revolution to redefine fundraising.</div>
@@ -903,7 +874,7 @@ var pageNFErr = 0;
     </div>
     <div class="whyUsRight animate-from-right">
       <h3>The Giveroo Difference</h3>
-      <p>What sets Giveroo apart is our triple-impact model: a better experience for donors, transparent partnerships with clients, and a training system that builds fundraisers focused on quality over quantity. We combine real human connection with smart tech like Keela to simplify operations, reduce costs, and deliver sustainable, long-term donor growth—so charities, fundraisers, and donors all win.</p>
+      <p>What sets Giveroo apart is our triple-impact model: a better experience for donors, transparent partnerships with clients, and a training system that builds fundraisers focused on quality over quantity. With offices in Ottawa, Dartmouth, Kingston, and Kitchener, we work across communities - combining real human connection with smart tech like Keela to simplify operations, reduce costs, and drive sustainable, long-term donor growth. Everyone wins: charities, fundraisers, and donors alike.</p>
       <a href="whyUs.html" class="whyUsButton">Learn More</a>
     </div>
   </div>

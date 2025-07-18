@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Giveroo - Why Us</title>
+<title>Giveroo - Fundraising Services</title>
 
 <meta name="description" content="Giveroo - built from the heart, driven by a passion for growing strong fundraising teams that bring in long-lasting donors"><meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -45,7 +45,7 @@ html, body {
   font-family: 'Raleway', sans-serif !important;
   font-weight: 100;
   min-height: 100%;
-  -moz-transform: scale(1,1);
+  -moz-transform: scale(1, 1);
   zoom: 1;
   zoom: 100%;
 }
@@ -201,19 +201,8 @@ nav.navBar {
   color: #FFE4C4;
 }
 
-.animate-from-bottom {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease-out;
-}
-
-.animate-visible {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-.whyHero {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/whyusHero.jpg');
+.fsHero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/fsHero.jpeg');
   background-size: cover;
   background-position: 50% 80%;
   background-attachment: fixed;
@@ -223,27 +212,30 @@ nav.navBar {
   font-weight: 400;
 }
 
-.whyHeroContent > h1 {
+.fsHeroContent > h1 {
   color: #FFE4C4;
 }
 
-.missionStatement,
-.foundersSection {
-  background-color: #222222;
-  color: #FFF;
+.ourApproach {
+  background-color: #222;
   padding: 100px 20px;
+  color: #fff;
+}
+
+.whyItWorks {
+  background-color: #252525;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.whyItWorks p {
   font-weight: 400;
 }
 
-.pillarsSection,
-.ctaSection {
-  background-color: #252525;
-  color: #FFF;
-  padding: 100px 20px;
-}
-
-.foundersSection {
-  padding-bottom: 70px;
+.whyItWorks h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #FFE4C4;
 }
 
 .sectionContainer {
@@ -251,75 +243,53 @@ nav.navBar {
   margin: 0 auto;
 }
 
-h2 {
+.sectionContainer > h2 {
   color: #FFE4C4;
   font-size: 2rem;
   margin-bottom: 50px;
 }
 
-.pillarsGrid,
-.foundersGrid {
-  display: flex;
-  flex-wrap: wrap;
+.approachCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
-  justify-content: center;
+  margin-top: 40px;
 }
 
-.pillar {
-  flex: 1 1 250px;
+.card {
   background-color: #faeedf;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
   color: #555;
   font-weight: 400;
-}
-
-.pillar h3 {
-  color: #222222;
-}
-
-.founderRow {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 40px;
-  margin-bottom: 50px;
-  background-color: #faeedf;
   padding: 30px;
   border-radius: 12px;
+  text-align: left;
+  transition: transform 0.3s ease;
 }
 
-.founderRow img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  flex-shrink: 0;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.founderText {
-  flex: 1;
-  color: #555;
-  font-weight: 400;
-}
-
-.founderText h3 {
+.card h3 {
   color: #222222;
-  margin-bottom: 16px;
 }
 
-.ctaSection {
-  text-align: center;
-  font-weight: 400;
+.whyDetails > div {
+  margin-bottom: 40px;
+}
+
+.ctaBlock {
   position: relative;
-  background: url('images/whyUsContact.jpg') center center / cover no-repeat;
+  background: url('images/fsCTA.jpg') center center / cover no-repeat;
   padding: 120px 20px;
   color: white;
+  text-align: center;
   z-index: 1;
+  color: #FFE4C4;
+  font-size: 2rem;
 }
 
-.ctaSection::before {
+.ctaBlock::before {
   content: '';
   position: absolute;
   top: 0;
@@ -360,10 +330,28 @@ h2 {
   transform: translateY(0);
 }
 
-.delay-1 { transition-delay: 0.2s; }
-.delay-2 { transition-delay: 0.4s; }
-.delay-3 { transition-delay: 0.6s; }
-.delay-4 { transition-delay: 0.8s; }
+.delay-1 {
+  transition-delay: 0.2s;
+}
+
+.delay-2 {
+  transition-delay: 0.4s;
+}
+
+.delay-3 {
+  transition-delay: 0.6s;
+}
+
+.animate-from-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
 
 .siteFooter {
   background-color: #444444;
@@ -441,24 +429,6 @@ h2 {
   .navBarWrap {
     padding: 0 16px;
   }
-
-  .founderRow {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .founderRow img {
-    margin-bottom: 20px;
-  }
-
-  .founderText {
-    text-align: left;
-  }
-
-  .navMenu {
-    display: none !important;
-  }
 }
 
 @media (min-width: 901px) and (max-width: 1100px) {
@@ -468,6 +438,10 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .navMenu {
+    display: none !important;
+  }
+
   .footerWrap {
     flex-direction: row;
     justify-content: space-between;
@@ -481,7 +455,7 @@ h2 {
 
 </style>
 <script>
-	$(document).ready(function(){
+$(document).ready(function(){
 		$('.hamburger').on('click', function () {
   $('.hamburger').toggleClass('is-active');
   $('.navMenu').fadeToggle(300);
@@ -494,7 +468,7 @@ h2 {
 	  $('body').removeClass('menu-open');
     });
 	
-	function revealOnScroll() {
+	 function revealOnScroll() {
       $('.fade-up').each(function () {
         var elementTop = $(this).offset().top;
         var windowBottom = $(window).scrollTop() + $(window).height();
@@ -504,10 +478,9 @@ h2 {
         }
       });
     }
-
     revealOnScroll();
-    $(window).on('scroll', revealOnScroll); 
-});
+    $(window).on('scroll', revealOnScroll);
+	});
 </script>
 </head>
 <body>
@@ -547,89 +520,64 @@ h2 {
 </div>
 <div class="bodyWrap">
 
-<section class="whyHero">
-  <div class="whyHeroContent">
-    <h1 class="fade-up">We Fundraise Differently</h1>
-    <p class="fade-up delay-1">We build trust, drive results, and create lasting impact one donor at a time.</p>
+<section class="fsHero">
+  <div class="fsHeroContent">
+    <h1 class="fade-up">Sustainable Donor Growth. At Scale.</h1>
+    <p class="fade-up delay-1">We specialize in the high volume acquisition of long term, recurring monthly donors through a modern, and reimagined approach to face-to-face fundraising.</p>
   </div>
 </section>
 
-<section class="missionStatement">
+<section class="ourApproach">
   <div class="sectionContainer">
-    <h2 class="fade-up">Our Mission</h2>
-    <p class="fade-up delay-1">
-      Giveroo is built from the heart, driven by a passion for growing strong teams that bring in long-lasting donors. We believe the real impact of fundraising begins after the first year, and we’re focused on building meaningful relationships and long-term giving that truly makes a difference.
-    </p>
+    <h2 class="fade-up">Our Approach</h2>
+    <div class="approachCards">
+      <div class="card fade-up delay-1">
+        <h3>Human First</h3>
+        <p>We focus on meaningful, respectful interactions that create real connections between donors and causes.</p>
+      </div>
+      <div class="card fade-up delay-2">
+        <h3>Smart Tech Integration</h3>
+        <p>We use platforms like Keela to ensure performance, and optimize campaign flow.</p>
+      </div>
+      <div class="card fade-up delay-3">
+        <h3>On-Point Training</h3>
+        <p>We train fundraisers to lead with empathy and integrity, focusing on long term high retention impact.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="pillarsSection">
+<section class="whyItWorks">
   <div class="sectionContainer">
-    <h2 class="fade-up">What Makes Us Different</h2>
-    <div class="pillarsGrid">
-      <div class="pillar fade-up delay-1">
-        <h3>People-First Culture</h3>
-        <p>We invest in our fundraisers like no one else — through training, mentorship, and meaningful support.</p>
+    <h2 class="fade-up">Why It Works</h2>
+    <p class="fade-up">Our fundraising model blends human first engagement, structured training, and performance enhancing tools to deliver consistent, high quality donor growth. Here's how it comes together:</p>
+
+    <div class="whyDetails">
+      <div class="fade-up">
+        <h3>Recurring Donor Acquisition</h3>
+        <p>We specialize in building long term donor relationships through face-to-face interactions that focus on empathy, education, and transparency. We focus on recurring montly commitments, with our goal being lasting support not one time gifts (OTGs).</p>
       </div>
-      <div class="pillar fade-up delay-2">
-        <h3>Long-Term Results</h3>
-        <p>We focus on building high-retention, monthly recurring donor relationships that last.</p>
+
+      <div class="fade-up">
+        <h3>Door-to-Door Campaigns</h3>
+        <p>Our team connects directly with individuals in neighborhoods aligned with your target audience profiles. These carefully selected routes allow us to start meaningful conversations, deliver your story authentically, and generate qualified, high retention donors at scale.</p>
       </div>
-      <div class="pillar fade-up delay-3">
-        <h3>Brand-Safe Partnerships</h3>
-        <p>Your reputation is our priority. We uphold the highest standards in every interaction.</p>
-      </div>
-      <div class="pillar fade-up delay-4">
-        <h3>Nationwide Experience</h3>
-        <p>From BC to Ontario, we’ve built and led high-performing fundraising teams across the country.</p>
+
+      <div class="fade-up">
+        <h3>Training &amp; Talent Development</h3>
+        <p>Our fundraisers go through rigorous training. We nurture team members to grow into confident advocates who don’t just pitch but inspire. This leadership focused approach fuels long term performance and brand ownership.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="foundersSection">
-  <div class="sectionContainer">
-    <h2 class="fade-up">Meet the Founders</h2>
-      <!-- Founder 1 -->
-	  <div class="founderRow fade-up delay-1">
-      <img src="images/founder1.jpg" alt="Jesse Hohnstein">
-      <div class="founderText">
-        <h3>Jesse Hohnstein – Co-Founder, Giveroo</h3>
-        <p>Jesse has been in the face-to-face fundraising world for over 8 years, starting at Global Faces Direct where he met his two best friends — and now business partners — Nic and Jordan. He’s known for his hands-on leadership, sharp eye for talent, and passion for people.</p>
-        <p>He’s a savage at promoting others and loves helping underdogs rise — taking people who are struggling and showing them how to turn things around by making the business a lifestyle. For Jesse, it’s more than just fundraising — it’s about connection, growth, and building a family. He’s proud to be creating a place where people can succeed — and feel at home.</p>
-      </div>
-    </div>
-	
-	<div class="founderRow fade-up delay-2">
-      <img src="images/founder2.jpg" alt="Jordan Nur">
-      <div class="founderText">
-        <h3>Jordan Nur – Co-Founder, Giveroo</h3>
-        <p>I’m in fundraising for the people — not just the ones our partner charities support, but the people doing the work on the ground every day. I’m passionate about building teams that uplift each other, keeping fundraisers focused on the bigger picture, and helping them grow through the hard days. There’s nothing better than watching someone turn rejection into resilience and reconnect with why they do this work.</p>
-      </div>
-    </div>
-	
-    <div class="founderRow fade-up delay-3">
-      <img src="images/founder3.jpg" alt="Nicolas Gilbert">
-      <div class="founderText">
-        <h3>Nicolas Gilbert – Co-Founder, Giveroo</h3>
-        <p>Nicolas has been immersed in the fundraising world since 2019. What started as a job for him quickly became a passion — one that’s allowed him to represent over twenty incredible charities and help secure thousands of long-term monthly donors for causes that truly matter to him and the generous donors he’s had the privilege of interacting with.</p>
-        <p>Throughout the years, he’s had the privilege of training thousands of new fundraisers and leading successful face-to-face fundraising teams across British Columbia, Alberta, and Ontario. He believes in the power of purpose-driven work — not just for the impact it has on the world, but for the way it transforms the people doing it.</p>
-        <p>What fuels Nicolas every day is the opportunity to build strong teams, develop new leaders, and mentor individuals who are just beginning their journey in the fundraising industry. Watching someone grow their confidence, master their craft, and eventually lead their own team is one of the most rewarding parts of what he loves doing.</p>
-        <p>At the heart of it all, Nicolas is driven by a simple goal: to make a meaningful difference — for the charities he and his teams serve, the donors they connect with, and the fundraisers he inspires along the way.</p>
-      </div>
-    </div>
-  </div>
-</section>
-  </div>
-</section>
-
-<section class="ctaSection">
+<section class="ctaBlock">
   <div class="sectionContainer fade-up">
-    <h2>Ready to Create Something Meaningful?</h2>
-    <p>Let’s partner to build fundraising campaigns that make a difference. We’d love to connect!</p>
-    <a href="getInTouch.html" class="ctaButton">Start a Conversation</a>
+    <h2>Looking for a better way to grow your donor base?</h2>
+    <a href="getInTouch.html" class="ctaButton">Let’s Talk</a>
   </div>
 </section>
+
 
 </div>
 <footer class="siteFooter">

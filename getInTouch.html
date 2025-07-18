@@ -2,8 +2,7 @@
 <head>
 <title>Giveroo - Get in Touch</title>
 
-<!-- HEAD PHP FILE -->
-<meta name="description" content="Giveroo"><meta charset="UTF-8">
+<meta name="description" content="Giveroo - built from the heart, driven by a passion for growing strong fundraising teams that bring in long-lasting donors"><meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <!-- Chrome, Firefox OS and Opera -->
 <meta name="theme-color" content="#FFE4C4">
@@ -35,62 +34,53 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<link href="styles/main.css" rel="stylesheet">
-<script src="scripts/main.js"></script>
-
 <style>
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-	height: 100%;
-    font-size: 100%;
-    list-style: none;
-    font-family: 'Raleway', sans-serif !important;
-    font-weight: 100;
-    min-height: 100%;
-    -moz-transform: scale(1,1);
-    zoom: 1;
-    zoom: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  list-style: none;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 100;
+  min-height: 100%;
+  -moz-transform: scale(1,1);
+  zoom: 1;
+  zoom: 100%;
 }
+
 body.menu-open {
   overflow: hidden;
   height: 100vh;
   position: fixed;
   width: 100%;
 }
+
 .noOverFlow {
-	overflow: hidden;
-}
-.alertMessage {
-    margin: 0;
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    padding: 12px;
-	font-size: 14px;
-	font-weight: 400;
-}
-.pgWrap {
-	width: 100%;
-    min-height: 100%;
-    text-rendering: optimizeLegibility;
-    overflow: hidden;
-	position: relative;
-    background-color: #FFFFFF;
-    margin-top: 0px;
+  overflow: hidden;
 }
 
-@keyframes slideUpFadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.alertMessage {
+  margin: 0;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 400;
 }
+
+.pgWrap {
+  width: 100%;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFFFFF;
+  margin-top: 0px;
+}
+
 nav.navBar {
   width: 100%;
   height: 100px;
@@ -98,9 +88,10 @@ nav.navBar {
   background: #444;
   transition: 0.3s ease;
 }
+
 .navBarWrap {
   display: flex;
-  justify-content: space-between; /* Pushes left and right sections to edges */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -108,7 +99,6 @@ nav.navBar {
   margin: 0 auto;
 }
 
-/* Left logo */
 .navBarLeft {
   display: flex;
   align-items: center;
@@ -119,13 +109,11 @@ nav.navBar {
   width: auto;
 }
 
-/* Right side (menu or hamburger) */
 .navBarRight {
   display: flex;
   align-items: center;
 }
 
-/* Non-mobile links */
 .navRightNonMobile {
   display: flex;
   gap: 30px;
@@ -146,47 +134,23 @@ nav.navBar {
 .navRightMobile {
   display: none;
 }
+
 .hamburger .hamburger-inner,
 .hamburger .hamburger-inner::before,
 .hamburger .hamburger-inner::after {
   background-color: white;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .navRightNonMobile {
-    display: none;
-  }
-
-  .navRightMobile {
-    display: block;
-  }
-
-  .navBarLeft a img {
-    height: 100px;
-  }
-
-  .navBarWrap {
-    padding: 0 16px;
-  }
-}
-
-/* Reduce spacing slightly for medium screens */
-@media (min-width: 901px) and (max-width: 1100px) {
-  .navRightNonMobile {
-    gap: 20px;
-  }
-}
 .navMenu {
-    position: fixed;
-    padding-top: 100px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(68, 68, 68, 0.95);
-    z-index: 4;
-    display: none;
-    overflow-y: auto;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(68, 68, 68, 0.95);
+  z-index: 4;
+  display: none;
+  overflow-y: auto;
 }
 
 .navMenuWrap {
@@ -196,7 +160,6 @@ nav.navBar {
   flex-direction: column;
 }
 
-/* Close button styling */
 .closeMenuBtn {
   background: none;
   border: none;
@@ -208,7 +171,6 @@ nav.navBar {
   margin-bottom: 30px;
 }
 
-/* Link styling */
 .navMenu ul {
   list-style: none;
   padding: 0;
@@ -239,49 +201,34 @@ nav.navBar {
   color: #FFE4C4;
 }
 
-@keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Hide menu entirely on desktop */
-@media (min-width: 768px) {
-  .navMenu {
-    display: none !important;
-  }
-}
-
-/* --- HERO --- */
 .contactHero {
-	  width: 100%;
-	  padding: 120px 20px 80px;
-	  text-align: center;
-	  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/contactbg.jpg');
-	  background-size: cover;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-attachment: fixed; /* This enables the parallax effect */
-	  color: #fff;
+  width: 100%;
+  padding: 120px 20px 80px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/contactbg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
 }
 
-    .contactHero h1 {
-      font-size: 2.6rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-      color: #FFE4C4;
-    }
+.contactHero h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #FFE4C4;
+}
 
-    .contactHero p {
-      font-size: 1.2rem;
-      color: #FFF
-      max-width: 700px;
-      margin: 0 auto;
-	  font-weight: 400;
-    }
+.contactHero p {
+  font-size: 1.2rem;
+  color: #FFF;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 400;
+}
 
-   .contactSection {
+.contactSection {
   width: 100%;
   padding: 100px 20px;
   background-color: #222222;
@@ -333,6 +280,7 @@ nav.navBar {
   border-radius: 6px;
   font-size: 1rem;
   transition: border 0.3s ease, background-color 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.6);
 }
 
 .contactForm input::placeholder,
@@ -368,23 +316,17 @@ nav.navBar {
   background-color: #8c654a;
   color: #FFFFFF;
 }
-.contactForm input,
-.contactForm textarea {
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.6);
+
+.animate-from-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
 }
 
-    /* --- ANIMATIONS --- */
-    .animate-from-bottom {
-      opacity: 0;
-      transform: translateY(50px);
-      transition: all 0.8s ease-out;
-    }
-
-    .animate-visible {
-      opacity: 1 !important;
-      transform: translateY(0) !important;
-    }
-
+.animate-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
 
 .siteFooter {
   background-color: #444444;
@@ -432,7 +374,50 @@ nav.navBar {
   color: #ccc;
 }
 
-/* Responsive */
+/* --- KEYFRAME ANIMATIONS --- */
+@keyframes slideUpFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 768px) {
+  .navRightNonMobile {
+    display: none;
+  }
+
+  .navRightMobile {
+    display: block;
+  }
+
+  .navBarLeft a img {
+    height: 100px;
+  }
+
+  .navBarWrap {
+    padding: 0 16px;
+  }
+
+  .navMenu {
+    display: none !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .navRightNonMobile {
+    gap: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .footerWrap {
     flex-direction: row;
@@ -487,11 +472,7 @@ var pageNFErr = 0;
         }
       });
     }
-
-    // Initial check
     checkAnimations();
-
-    // Recheck on scroll
     $(window).on('scroll resize', checkAnimations);
 	$('.submitMessageButton').click(function(){
 		var nameVal = $('.inputName').val();
@@ -607,23 +588,37 @@ var pageNFErr = 0;
     </p>
   </section>
 
-  <!-- CONTACT SECTION -->
   <section class="contactSection">
     <div class="contactContainer">
-      <!-- LEFT: CONTACT INFO -->
-      <div class="contactInfo animate-from-bottom">
-        <h3>Contact Information</h3>
-        <p><strong>Address:</strong><br>1680 Woodward Drive, Ottawa, ON, K2C 3R8</p>
-        <p><strong>Phone:</strong><br>(343)-947-2212</p>
-        <p><strong>Direct Contacts:</strong></p>
-        <p>
-          Nicolas Gilbert – <a href="mailto:nicolas@giveroo.com">nicolas@giveroo.com</a><br>
-          Jesse Hohnstein – <a href="mailto:jesse@giveroo.com">jesse@giveroo.com</a><br>
-          Jordan Nur – <a href="mailto:jordan@giveroo.com">jordan@giveroo.com</a>
-        </p>
+	  <div class="contactInfo animate-from-bottom">
+      <h3>Contact Information</h3>
+
+      <p><strong>Head Office (Ottawa)</strong><br>
+      1680 Woodward Drive, Ottawa, ON, K2C 3R8<br>
+      <strong>Phone:</strong> (343)-947-2212</p>
+
+      <div class="additionalOffices">
+        <p><strong>Dartmouth Office</strong><br>
+        Mike Habbous<br>
+        102 Albro Lake Rd, Dartmouth, NS</p>
+
+        <p><strong>Kitchener Office</strong><br>
+        Mateo Kaya<br>
+        72 Saint Leger St, Unit 317 Kitchener, ON</p>
+		
+		 <p><strong>Kingston Office</strong><br>
+        Ben Halpern<br>
+        556 O'Connor Dr, Kingston, ON</p>
       </div>
 
-      <!-- RIGHT: CONTACT FORM -->
+      <p><strong>Direct Contacts:</strong></p>
+      <p>
+        Nicolas Gilbert – Cofounder - <a href="mailto:nicolas@giveroo.com">nicolas@giveroo.com</a><br>
+        Jesse Hohnstein – Cofounder - <a href="mailto:jesse@giveroo.com">jesse@giveroo.com</a><br>
+        Jordan Nur – Cofounder - <a href="mailto:jordan@giveroo.com">jordan@giveroo.com</a>
+      </p>
+    </div>
+
       <div class="contactForm animate-from-bottom" style="transition-delay: 0.3s;">
         <h3>Send Us a Message</h3>
         <div>
